@@ -4,7 +4,7 @@ import { createServer as createViteServer } from "vite";
 import { createRequire } from "module";
 
 const require = createRequire(import.meta.url);
-const { handleSendOrderEmail } = require("./lib/send-order-email-handler.cjs");
+const { handleSendOrderEmail } = require("./api/send-order-email.cjs");
 
 async function startServer() {
   const app = express();
